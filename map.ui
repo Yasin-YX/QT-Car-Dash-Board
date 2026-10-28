@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Map</class>
+ <widget class="QWidget" name="Map">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Map{
+background-color: rgb(20, 24, 40);
+}</string>
+  </property>
+  <widget class="MapLabel" name="label_map">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>地图</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_zoomin">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>20</y>
+     <width>60</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: rgba(0,0,0,120);
+    color: rgb(255,255,255);
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 10px;
+}
+QPushButton:hover{
+    background-color: rgba(90,90,90,180);
+}
+QPushButton:pressed{
+    background-color: rgba(40,40,40,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_zoomout">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>80</y>
+     <width>60</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: rgba(0,0,0,120);
+    color: rgb(255,255,255);
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 10px;
+}
+QPushButton:hover{
+    background-color: rgba(90,90,90,180);
+}
+QPushButton:pressed{
+    background-color: rgba(40,40,40,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MapLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">map.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
